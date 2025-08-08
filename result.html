@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Segment Result</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+        h2 {
+            color: #2ecc71;
+        }
+        .result-box {
+            display: inline-block;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #3498db;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h2>Your Customer Segment</h2>
+        <h3>Cluster {{ segment }}</h3>
+        <p><strong>Description:</strong> {{ description }}</p>
+        <a href="/">Predict Another</a>
+    </div>
+</body>
+</html>
